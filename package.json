@@ -1,0 +1,14 @@
+{
+  "name": "friskus",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Martin Berggren <martin@digilar.se>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "scss": "node-sass scss/ -wo ./"
+  },
+  "dependencies": {
+    "node-sass": "^4.12.0"
+  }
+}

@@ -5,7 +5,7 @@ require('laravel-mix-purgecss');
 
 mix
   .js('resources/js/app.js', './public/app.js')
-  .sass('resources/styles/style.scss', './public')
+  .sass('resources/styles/site.scss', './public')
   .purgeCss(
     {
       extensions: ['twig', 'js', 'php'],

@@ -9,8 +9,14 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: mb
 */
 
-$black: #000;
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import "components/button";
 
 body {
-  background: $black;
+  background: red;
 }

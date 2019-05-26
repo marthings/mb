@@ -97,6 +97,17 @@
 
 /***/ }),
 
+/***/ "./resources/styles/editor-styles.scss":
+/*!*********************************************!*\
+  !*** ./resources/styles/editor-styles.scss ***!
+  \*********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+
 /***/ "./resources/styles/site.scss":
 /*!************************************!*\
   !*** ./resources/styles/site.scss ***!
@@ -109,14 +120,15 @@
 /***/ }),
 
 /***/ 0:
-/*!****************************************************************!*\
-  !*** multi ./resources/js/app.js ./resources/styles/site.scss ***!
-  \****************************************************************/
+/*!******************************************************************************************************!*\
+  !*** multi ./resources/js/app.js ./resources/styles/site.scss ./resources/styles/editor-styles.scss ***!
+  \******************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(/*! /Users/martinberggren/Local Sites/friskus/app/public/wp-content/themes/friskus/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/martinberggren/Local Sites/friskus/app/public/wp-content/themes/friskus/resources/styles/site.scss */"./resources/styles/site.scss");
+__webpack_require__(/*! /Users/martinberggren/Local Sites/friskus/app/public/wp-content/themes/friskus/resources/styles/site.scss */"./resources/styles/site.scss");
+module.exports = __webpack_require__(/*! /Users/martinberggren/Local Sites/friskus/app/public/wp-content/themes/friskus/resources/styles/editor-styles.scss */"./resources/styles/editor-styles.scss");
 
 
 /***/ })

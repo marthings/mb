@@ -13,3 +13,5 @@ mix
   )
   .tailwind();
 
+mix
+  .sass('resources/styles/editor-styles.scss', './public/')

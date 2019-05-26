@@ -7562,12 +7562,18 @@ video {
   z-index: auto;
 }
 
-.button {
-  background: green;
+.editor-post-title__block .editor-post-title__input,
+.edit-post-visual-editor, .edit-post-visual-editor p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.home {
-  background: red;
+body {
+  font-size: 1.2rem;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.button {
+  background: green;
 }
 
 @media (min-width: 640px) {

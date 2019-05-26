@@ -15,8 +15,6 @@ Text Domain: mb
 
 @tailwind utilities;
 
-@import "components/button";
 
-.home {
-  background: red;
-}
+@import "typography";
+@import "components/button";

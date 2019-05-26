@@ -80,12 +80,17 @@ class StarterSite extends Timber\Site {
      */
     add_theme_support( 'title-tag' );
 
+
+    add_theme_support( 'responsive-embeds' );
+
     /*
      * Enable support for Post Thumbnails on posts and pages.
      *
      * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
      */
     add_theme_support( 'post-thumbnails' );
+
+    add_theme_support( 'editor-styles');
 
     /*
      * Switch default core markup for search form, comment form, and comments
@@ -118,6 +123,7 @@ class StarterSite extends Timber\Site {
     );
 
     add_theme_support( 'menus' );
+
   }
 
   /** This Would return 'foo bar!'.
@@ -142,3 +148,21 @@ class StarterSite extends Timber\Site {
 }
 
 new StarterSite();
+
+/** Hide in admin
+ * 
+ */
+
+function hide_menu() {
+  remove_menu_page('edit-comments.php'); // Hide comments
+  remove_menu_page('link-manager.php'); // Hide blog links
+  remove_submenu_page( 'index.php', 'update-core.php' ); // hide the updates submenu
+}
+
+add_action('admin_head', 'hide_menu');
+
+/** Editor styles
+ * 
+ */
+
+add_editor_style( 'public/editor-styles.css' );

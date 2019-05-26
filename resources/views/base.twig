@@ -22,30 +22,34 @@
   </head>
 {% endblock %}
 
-  <body class="{{body_class}}" data-template="base.twig">
-    <a class="skip-link screen-reader-text" href="#content">{{ _e( 'Skip to content') }}</a>
-    <header class="header" >
-      {% block header %}
-        <div class="wrapper">
-          <h1 class="hdr-logo" role="banner">
-            <a class="hdr-logo-link" href="{{site.url}}" rel="home">{{site.name}}</a>
-          </h1>
-          <nav id="nav-main" class="nav-main" role="navigation">
-            {% include "menu.twig" with {'menu': menu.get_items} %}
-          </nav><!-- #nav -->
-        </div>
-      {% endblock %}
-    </header>
+  <body class="{{body_class}} wp-embed-responsive" data-template="base.twig">
 
-    <section id="content" role="main" class="content-wrapper">
-      {% if title %}<h1>{{title}}</h1>{% endif %}
-      <div class="wrapper">
-        {% block content %}
-          Sorry, no content
+    <div class="container mx-auto px-4">
+
+      <header class="header" >
+        {% block header %}
+          <div class="wrapper">
+            <h1 class="hdr-logo" role="banner">
+              <a class="hdr-logo-link" href="{{site.url}}" rel="home">{{site.name}}</a>
+            </h1>
+            <nav id="nav-main" class="nav-main" role="navigation">
+              {% include "menu.twig" with {'menu': menu.get_items} %}
+            </nav><!-- #nav -->
+          </div>
         {% endblock %}
-      </div>
+      </header>
 
-    </section>
+      <section id="content" role="main" class="content-wrapper">
+        {% if title %}<h1>{{title}}</h1>{% endif %}
+        <div class="wrapper">
+          {% block content %}
+            Sorry, no content
+          {% endblock %}
+        </div>
+
+      </section>
+
+    </div>
 
     {% block footer %}
       <footer id="footer">
